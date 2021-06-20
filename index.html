@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Favourtite Sports Icon List App</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+    <form id="new-item">
+        <div id="form-wrapper">
+            <div class="form-item">
+                <label for="name" class="primary">Name</label>
+                <input type="text" id="name" required />
+            </div>
+
+            <div class="form-item">
+                <label for="sport" class="primary">Sport</label>
+                <input type="text" id="sport" required />
+            </div>
+
+            <div class="form-item">
+                <label for="nationality" class="primary">Nationality</label>
+                <select id="nationality">
+                    <option value="" disabled selected></option>
+                    <option value="British">British</option>
+                    <option value="American">American</option>
+                    <option value="French">French</option>
+                    <option value="Russian">Russian</option>
+                    <option value="German">German</option>
+                    <option value="Dutch">Dutch</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Italian">Italian</option>
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="save" />
+    </form>
+
+    <h1>Favourite Sports Stars List</h1>
+    <ul id="sport-icon-list"></ul>
+</body>
+
+</html>
